@@ -1,0 +1,38 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  .menu-button__close {
+    display: none;
+  }
+
+  &.is-open .menu-button__close {
+    display: block;
+  }
+
+  &.is-open .menu-button__icon {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-container {
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: $white-color;
+  }
+}
