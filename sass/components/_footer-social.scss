@@ -1,5 +1,7 @@
 .footer-social {
-  // margin-left: 70px;
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+  }
 }
 
 .footer-social__text {
@@ -14,9 +16,9 @@
 .footer-social__list {
   display: flex;
   gap: 10px;
+  margin-top: 20px;
 
   @media screen and (max-width: 767px) {
-    margin-top: 20px;
     margin-bottom: 60px;
     justify-content: center;
     align-items: center;
