@@ -1,44 +1,36 @@
 .menu-container {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   padding: 48px 40px;
-  background: $white-color;
+  background-color: $white-color;
+  z-index: 999;
 
-  &.is-open {
-    display: block;
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
 
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+}
+
+.menu-toggle {
+  margin-left: auto;
   background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 
-  .menu-button__close {
-    display: none;
-  }
-
-  .menu-button__icon {
-    display: block;
-  }
-
-  &.is-open .menu-button__close {
-    display: block;
-  }
-
-  &.is-open .menu-button__icon {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
+@media (min-width: $tablet) {
+  .menu-toggle {
     display: none;
   }
 }
@@ -99,6 +91,7 @@
   &--size {
     font-size: 34px;
     line-height: 1.18;
+    color: $accent-color;
   }
 
   &--grey {
@@ -109,12 +102,16 @@
   &:hover,
   &:focus {
     color: $accent-color;
-    fill: $accent-color;
   }
 }
 
 .menu-contact__icon {
   display: none;
+}
+
+.menu-button__close:hover,
+.menu-button__close:focus {
+  color: $accent-color;
 }
 
 .menu-social {
