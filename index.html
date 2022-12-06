@@ -155,8 +155,9 @@
           <ul class="work__list">
             <li class="work__item">
               <img
+                srcset="./images/logo1.jpg 1x, ./images/logo1@2x.jpg 2x"
                 class="work__img"
-                src="./images/logo-1.jpg"
+                src="./images/logo1.jpg"
                 alt="Робота It-спеціаліста з портативним комп'ютером"
                 width="370"
               />
@@ -164,8 +165,9 @@
             </li>
             <li class="work__item">
               <img
+                srcset="./images/logo2.jpg 1x, ./images/logo2@2x.jpg 2x"
                 class="work__img"
-                src="./images/logo-2.jpg"
+                src="./images/logo2.jpg"
                 alt="Робота It-спеціаліста пралельно з комп'ютером та смартфоном"
                 width="370"
               />
@@ -173,8 +175,9 @@
             </li>
             <li class="work__item">
               <img
+                srcset="./images/logo3.jpg 1x, ./images/logo3@2x.jpg 2x"
                 class="work__img"
-                src="./images/logo-3.jpg"
+                src="./images/logo3.jpg"
                 alt="Робота It-спеціаліста на планшеті з палітрою"
                 width="370"
               />
@@ -190,12 +193,28 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/igor.jpg"
-                alt="Співробітник компанії Ігор Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/igor-mob450.jpg 1x, ./images/igor-mob450 @2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/igor-tab354.jpg 1x, ./images/igor-tab354@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="./images/igor-desk 270.jpg 1x, ./images/igor-desk 270@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team__img"
+                  src="./images/igor-mob450.jpg"
+                  alt="Співробітник компанії Ігор Дем'яненко"
+                />
+              </picture>
               <div class="team__meta">
                 <h3 class="team-name name">Ігор Дем'яненко</h3>
                 <p class="team__text team__text--grey">Product Designer</p>
