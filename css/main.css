@@ -35,11 +35,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -372,7 +367,6 @@ ul {
 .hero {
   margin: 0 auto;
   text-align: center;
-  max-width: 100%;
   padding-top: 118px;
   padding-bottom: 118px;
   width: 100%;
@@ -391,8 +385,6 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 100%;
-    height: auto;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-tablet.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-tablet.jpg");
     background-size: cover;
@@ -407,7 +399,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    height: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-desktop.jpg");
@@ -648,6 +639,8 @@ ul {
 
 .team__img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .team__title {
