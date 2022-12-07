@@ -104,6 +104,7 @@
 }
 
 .page-header__item {
+  
   &:not(:last-child) {
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
       margin-bottom: 10px;

@@ -12,15 +12,15 @@
 }
 
 .advantages__item {
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    margin: 15px;
-    width: calc((100% - 2 * 30px) / 2);
-  }
-
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
   }
 }
 
