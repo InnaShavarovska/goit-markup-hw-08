@@ -27,14 +27,14 @@
             <li class="site-nav__item">
               <a
                 href="./index.html"
-                class="site-nav__link page-header__site-nav site-nav__link--black site-nav__link--current"
+                class="site-nav__link page-header__site-nav site-nav__link--black"
                 >Студія</a
               >
             </li>
             <li class="site-nav__item">
               <a
                 href="./portfolio.html"
-                class="site-nav__link page-header__site-nav site-nav__link--black"
+                class="site-nav__link page-header__site-nav site-nav__link--black site-nav__link--current"
                 >Портфоліо</a
               >
             </li>
@@ -105,12 +105,24 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img
-                    class="projects__img"
-                    src="./images/technokr.jpg"
-                    alt="Веб-сайт технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk1_370.jpg 1x, ./images/desk1_740.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab1_354.jpg 1x, ./images/tab1_708.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob1_450.jpg 1x, ./images/mob1_900.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img class="team__img" src="./images/mob1_450.jpg" alt="Веб-сайт технокряк" />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -128,12 +140,28 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img
-                    class="projects__img"
-                    src="./images/poster.jpg"
-                    alt="Постер два баскетболісти з м'ячем"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk2_370.jpg 1x, ./images/desk2_740.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab2_354-1.jpg 1x, ./images/tab2_708-1.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob2_450-1.jpg 1x, ./images/mob2_900-1.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/mob2_450-1.jpg"
+                      alt="Постер два баскетболісти з м'ячем"
+                    />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -151,12 +179,28 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img
-                    class="projects__img"
-                    src="./images/restaurant.jpg"
-                    alt="Логотип ресторану Сіфуд"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk3_370.jpg 1x, ./images/desk3_740.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab3_354-2.jpg 1x, ./images/tab3_708-2.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob3_450-2.jpg 1x, ./images/mob3_900-2.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/mob3_450-2.jpg"
+                      alt="Логотип ресторану Сіфуд"
+                    />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -174,12 +218,28 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img
-                    class="projects__img"
-                    src="./images/headphones.jpg"
-                    alt="Навушники чорного кольору"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk4_370.jpg 1x, ./images/desk4_740.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab4_354-3.jpg 1x, ./images/tab4_708-3.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob4_450-3.jpg 1x, ./images/mob4_900-3.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/mob4_450-3.jpg"
+                      alt="Навушники чорного кольору"
+                    />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -197,12 +257,28 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img
-                    class="projects__img"
-                    src="./images/boxes.jpg"
-                    alt="Одна коробочка білого кольору друга коробочка тілесного кольору"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk5_370.jpg 1x, ./images/desk5_740.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab5_354-4.jpg 1x, ./images/tab5_708-4.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob5_450-4.jpg 1x, ./images/mob5_900-4.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/mob5_450-4.jpg"
+                      alt="Одна коробочка білого кольору друга коробочка тілесного кольору"
+                    />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -220,12 +296,24 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img
-                    class="projects__img"
-                    src="./images/monitor.jpg"
-                    alt="Монітор комп'ютера"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk6_370.jpg 1x, ./images/desk6_740.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab6_354-5.jpg 1x, ./images/tab6_708-5.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob6_450-5.jpg 1x, ./images/mob6_900-5.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img class="team__img" src="./images/mob6_450-5.jpg" alt="Монітор комп'ютера" />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -243,12 +331,28 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img
-                    class="projects__img"
-                    src="./images/magazin.jpg"
-                    alt="Розгорнутий журнал Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk7_370.jpg 1x, ./images/desk7_740.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab7_354-6.jpg 1x, ./images/tab7_708-6.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob7_450-6.jpg 1x, ./images/mob7_900-6.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/mob7_450-6.jpg"
+                      alt="Розгорнутий журнал Limited Edition"
+                    />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -266,7 +370,24 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img class="projects__img" src="./images/birka.jpg" alt="Бірка LAB" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/desk8_370.jpg 1x, ./images/desk8_740.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab8_354-7.jpg 1x, ./images/tab8_708-7.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob8_450-7.jpg 1x, ./images/mob8_900-7.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img class="team__img" src="./images/mob8_450-7.jpg" alt="Бірка LAB" />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -284,12 +405,28 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="projects__card">
-                  <img
-                    class="projects__img"
-                    src="./images/notebook.jpg"
-                    alt="Робота людини за ноутбуком"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/desk9_370.jpg 1x, ./images/desk9_740.jpg.jpg 2x"
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/tab9_354-8.jpg 1x, ./images/tab9_708-8.jpg 2x"
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="./images/mob9_450-8.jpg 1x, ./images/mob9_900-8.jpg 2x"
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      class="team__img"
+                      src="./images/mob9_450-8.jpg"
+                      alt="Робота людини за ноутбуком"
+                    />
+                  </picture>
                   <div class="projects__overlay">
                     <p class="projects__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
