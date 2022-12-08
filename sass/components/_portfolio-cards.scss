@@ -22,13 +22,6 @@
     }
   }
 
-  &--position {
-    @media screen and (max-width: 1199px) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
   @media screen and (min-width: $tablet) {
     width: calc((100% - 30px) / 2);
   }
@@ -40,12 +33,8 @@
 
 .projects__link {
   text-decoration: none;
-
-  &--position {
-    @media screen and (max-width: 1199px) {
-      flex-grow: 1;
-    }
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .projects__card {
@@ -109,6 +98,7 @@
 }
 
 .projects__meta {
+  flex-grow: 1;
   width: 100%;
   height: auto;
   padding-top: 20px;
