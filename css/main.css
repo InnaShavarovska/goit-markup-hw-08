@@ -420,13 +420,18 @@ ul {
 
 .hero__title {
   margin: 0 auto;
-  width: 360px;
+  width: 100%;
   color: #FFFFFF;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1332,7 +1337,7 @@ ul {
 .modal-form {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 609px;
   padding: 40px;
   background-color: #FFFFFF;
 }
@@ -1530,12 +1535,22 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .checkbox__label {
@@ -1553,7 +1568,7 @@ ul {
 }
 
 .checkbox__icon {
-  display: block;
+  display: inline-block;
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -1566,11 +1581,36 @@ ul {
   background-origin: border-box;
 }
 
+.checkbox__text {
+  font-size: 12px;
+  line-height: 1.17;
+}
+@media screen and (max-width: 437px) {
+  .checkbox__text {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
 .checkbox__link {
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 1.17;
   color: #2196F3;
+}
+@media screen and (max-width: 437px) {
+  .checkbox__link {
+    font-size: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .checkbox__link {
-    margin-left: 5px;
+    font-size: 14px;
+    line-height: 1.7;
   }
 }/*# sourceMappingURL=main.css.map */
