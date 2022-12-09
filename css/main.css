@@ -1321,7 +1321,6 @@ ul {
 @media screen and (max-width: 767px) {
   .backdrop {
     overflow-y: scroll;
-    padding: 93px 15px;
   }
 }
 
